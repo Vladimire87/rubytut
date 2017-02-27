@@ -7,7 +7,7 @@ sleep 3
 
 if random == 11
   puts "<<<Ребро>>>"
-  elsif coin == 1
+elsif coin == 1
   puts "Выпала решка"
 else
   puts "Выпал орел" 
