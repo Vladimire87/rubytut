@@ -1,18 +1,28 @@
+# Пустой массив
 array = []
 
-puts "Enter number"
+puts "Какой длины будет массив случайных чисел?"
+
 number = gets.to_i
 
-count = 1
+index = 0
 
-summ = 0
+while index < number do
+  array << rand(100)
 
-while count <= number do 
-  array << count
-  summ += count
-  count += 1
+  index += 1
 end
 
 puts array.to_s
-puts "Summ of all numbers: " + summ.to_s
 
+# переменная хранит max_number from array
+max_number = 0
+
+for item in array do
+  if item > max_number
+    max_number = item
+  end
+end
+
+puts "Самое большое число:"
+puts max_number.to_s
